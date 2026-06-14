@@ -17,6 +17,7 @@ import 'phase4/error_handling.dart';
 import 'phase4/cache_lesson.dart';
 import 'phase4/weather_milestone.dart';
 import 'phase5/debugging_lesson.dart';
+import 'phase5/native_features_lesson.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,6 +30,13 @@ class HomeScreen extends StatelessWidget {
       subtitle: 'Logging, rebuilds, perf, errors, DevTools',
       color: Colors.teal,
       route: 'debugging',
+    ),
+    _LessonCard(
+      icon: Icons.phone_android,
+      title: 'Native Features',
+      subtitle: 'GPS, camera, biometrics, haptics, platform channels',
+      color: Colors.indigo,
+      route: 'native',
     ),
   ];
 
@@ -268,6 +276,7 @@ class HomeScreen extends StatelessWidget {
       'cache': const CacheLesson(),
       'weather': const WeatherMilestone(),
       'debugging': const DebuggingLesson(),
+      'native': const NativeFeaturesLesson(),
     };
 
     Navigator.push(
