@@ -16,9 +16,21 @@ import 'phase4/json_lesson.dart';
 import 'phase4/error_handling.dart';
 import 'phase4/cache_lesson.dart';
 import 'phase4/weather_milestone.dart';
+import 'phase5/debugging_lesson.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+  // Phase 5 cards
+  static const _phase5Lessons = [
+    _LessonCard(
+      icon: Icons.bug_report,
+      title: 'Debugging & Profiling',
+      subtitle: 'Logging, rebuilds, perf, errors, DevTools',
+      color: Colors.teal,
+      route: 'debugging',
+    ),
+  ];
 
   // Phase 2 cards
   static const _phase2Lessons = [
@@ -195,6 +207,18 @@ class HomeScreen extends StatelessWidget {
             icon: Icons.cloud_outlined,
           ),
           ..._phase4Lessons.map((lesson) => _buildCard(context, lesson, true)),
+
+          const SizedBox(height: 16),
+          const Divider(),
+          const SizedBox(height: 8),
+
+          // Phase 5 header
+          _PhaseHeader(
+            title: 'Phase 5: Polish & Ship',
+            subtitle: 'Debugging, profiling, native features, deployment',
+            icon: Icons.rocket_outlined,
+          ),
+          ..._phase5Lessons.map((lesson) => _buildCard(context, lesson, true)),
         ],
       ),
     );
@@ -243,6 +267,7 @@ class HomeScreen extends StatelessWidget {
       'errors': const ErrorHandlingLesson(),
       'cache': const CacheLesson(),
       'weather': const WeatherMilestone(),
+      'debugging': const DebuggingLesson(),
     };
 
     Navigator.push(
