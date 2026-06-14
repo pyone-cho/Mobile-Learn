@@ -19,6 +19,7 @@ import 'phase4/weather_milestone.dart';
 import 'phase5/debugging_lesson.dart';
 import 'phase5/native_features_lesson.dart';
 import 'phase5/deployment_lesson.dart';
+import 'phase5/capstone_marketplace.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,6 +46,13 @@ class HomeScreen extends StatelessWidget {
       subtitle: 'Build types, signing, store prep, CI/CD, versioning',
       color: Colors.deepOrange,
       route: 'deploy',
+    ),
+    _LessonCard(
+      icon: Icons.emoji_events,
+      title: '🏆 Capstone: Marketplace',
+      subtitle: 'Full app: feed, favorites, create listing, profile',
+      color: Colors.amber,
+      route: 'marketplace',
     ),
   ];
 
@@ -286,6 +294,7 @@ class HomeScreen extends StatelessWidget {
       'debugging': const DebuggingLesson(),
       'native': const NativeFeaturesLesson(),
       'deploy': const DeploymentLesson(),
+      'marketplace': const CapstoneMarketplace(),
     };
 
     Navigator.push(
