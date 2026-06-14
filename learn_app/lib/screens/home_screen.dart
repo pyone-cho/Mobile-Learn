@@ -18,6 +18,7 @@ import 'phase4/cache_lesson.dart';
 import 'phase4/weather_milestone.dart';
 import 'phase5/debugging_lesson.dart';
 import 'phase5/native_features_lesson.dart';
+import 'phase5/deployment_lesson.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -37,6 +38,13 @@ class HomeScreen extends StatelessWidget {
       subtitle: 'GPS, camera, biometrics, haptics, platform channels',
       color: Colors.indigo,
       route: 'native',
+    ),
+    _LessonCard(
+      icon: Icons.store,
+      title: 'App Store Deployment',
+      subtitle: 'Build types, signing, store prep, CI/CD, versioning',
+      color: Colors.deepOrange,
+      route: 'deploy',
     ),
   ];
 
@@ -277,6 +285,7 @@ class HomeScreen extends StatelessWidget {
       'weather': const WeatherMilestone(),
       'debugging': const DebuggingLesson(),
       'native': const NativeFeaturesLesson(),
+      'deploy': const DeploymentLesson(),
     };
 
     Navigator.push(
