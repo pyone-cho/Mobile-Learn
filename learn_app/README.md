@@ -17,7 +17,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 🏁 Mobile-Learn — Complete Curriculum
-
+```
 ┌───────┬───────────────────┬──────────────────────┬─────────────────┐
 │ Phase │       Topic       │        Files         │    Milestone    │
 ├───────┼───────────────────┼──────────────────────┼─────────────────┤
@@ -31,6 +31,7 @@ samples, guidance on mobile development, and a full API reference.
 ├───────┼───────────────────┼──────────────────────┼─────────────────┤
 │ 5     │ Polish & Ship     │ 3 lessons + Capstone │ Marketplace     │
 └───────┴───────────────────┴──────────────────────┴─────────────────┘
+```
 
 📊 Stats
 
